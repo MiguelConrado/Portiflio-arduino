@@ -146,14 +146,14 @@
 
    @media (max-width:1099px) {
       .trabalhos-container{
-         padding: 20px 40px;
+         padding: 20px 0px;
          display: block;
          justify-content: space-between;
          background-color: #121214;
          box-shadow:inset 0 9px 10px -10px rgba(255, 255, 255, 0.76);
          
          & .janela-trabalho{
-            width:100%;
+            width:calc(100% - 50px);
             height: 100%;
             margin: 25px;
 
