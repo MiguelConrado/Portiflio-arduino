@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media (min-width:789px){
+     h1{
+            font-size: 50px;
+        }
+    
+    h2{
+        font-size: 40px;
+    }
+    summary{
+        font-size: 20px;
+    }
+
+
+    
+section.exemplos{
+    padding: 0px 40px;
+    
+
+    & h2{
+        font-size: 60px;
+        user-select: none;
+    }
+    & h3{
+        user-select: none;
+    }
+}
+
+ul{
+    margin-top: 25px;
+    margin-left: 25px;
+    & li{
+        list-style-type:decimal;
+        font-size: 25px;
+    }
+}
+}

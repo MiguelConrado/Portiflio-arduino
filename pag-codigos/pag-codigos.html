@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag-code</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="media-querie.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+    <header>
+        <div class="upper-case">
+            <h1>Codigos</h1>
+                <a href="../index.html"><button type="button" id="btn-voltar">Voltar</button></a>
+        </div>
+        
+        <p>Montar um semáforo usando o Arduino tem sido desafiador, mas gratificante. Compreender os conceitos básicos de eletrônica e programação é essencial para integrar os componentes físicos ao software. No início, enfrentamos dificuldades para entender o funcionamento e a sincronização das luzes, mas superamos os obstáculos por meio de experimentação e ajustes contínuos. Ver o semáforo operando corretamente, alternando entre luzes vermelhas, amarelas e verdes, foi uma recompensa pelo esforço dedicado. Essa jornada está nos ensinando valiosas lições sobre resolução de problemas e colaboração em equipe.
+        </p>
+
+    </header>
+
+<main>
+    <div class="container-todos-codigos"> 
+        
+        <!--CODIGOS DIA 1-->
+        <div class="container-dias"  id="coded1" onclick="coded1()">
+            <h2>DIA 1</h2>
+        </div>
+            
+        <!-- CODIGOS 2 -->
+            
+        <div class="container-dias" id="coded2" onclick="coded2()">
+            <h2>DIA 2</h2>
+        </div>
+
+        <!-- CODIGOS DO DIA 3 A BAIXO -->
+
+        <div class="container-dias" id="coded3" onclick="coded3()">
+            <h2>DIA 3</h2>
+        </div>
+    </div>
+
+    <div class="codigos-container">
+        <h2>Codigos aqui</h2>
+    </div>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!--  
+<summary>
+    <details>
+            
+        <div class="codigos">
+            1     <span class="verde">// dando um "nome" para as portas </span><br>
+            2     int vermelho = 10;<br>
+            3     int amarelo = 9;<br>
+            4     int verde = 8;<br>
+            5<br>
+            6     void setup() {<br>
+            7     <span class="verde">// indicando para o arduíno quais portas vamos usar</span><br>
+            8       pinMode(vermelho, OUTPUT);<br>
+            9       pinMode(amarelo, OUTPUT);<br>
+            10       pinMode(verde, OUTPUT);<br>
+            11     }<br>
+            12<br>
+            13    void loop() {<br>
+            14    <span class="verde"> // vamos começar do amarelo. Estranho não? </span><br>
+            15    <span class="verde"> // você vai entender no próximo exercício!</span><br>
+            16       digitalWrite(vermelho, LOW);<br>
+            17       digitalWrite(amarelo, HIGH);<br>
+            18       digitalWrite(verde, LOW);<br>
+            19<br>
+            20    <span class="verde"> // esperamos 2s com o sinal no amarelo</span><br>
+            21       delay(2000);<br>
+            22<br>
+            23    <span class="verde"> // apagamos o amarelo e ligamos o vermelho</span><br>
+            24       digitalWrite(amarelo, LOW);<br>
+            25       digitalWrite(vermelho, HIGH);<br>
+            26    <span class="verde"> // Não precisa desse pois o verde já estava apagado</span><br>
+            27    <span class="verde"> // digitalWrite(verde, LOW);</span><br>
+            28<br>
+            29     <span class="verde">// esperamos 5s com o sinal fechado</span><br>
+            30       delay(5000);<br>
+            31<br>
+            32    <span class="verde">// para finalizar, apagamos o vermelho e ligamos o verde</span><br>
+            33       digitalWrite(verde, HIGH);<br>
+            34    <span class="verde">// não precisa desse pois o amarelo já estava apagado</span><br>
+            35    <span class="verde">// digitalWrite(amarelo, LOW);</span><br>
+            36       digitalWrite(vermelho, LOW);,<br>
+            37<br>
+            38    <span class="verde">// esperamos 5s com o sinal aberto</span><br>
+            39       delay(5000);<br>
+            40    }<br>
+        </div>
+        
+    </details>
+</summary> -->
